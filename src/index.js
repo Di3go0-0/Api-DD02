@@ -1,6 +1,9 @@
 import app from './app.js'
 import {connect} from './db.js'
 import { PORT } from './config.js';
+import events from 'events';
+
+events.EventEmitter.defaultMaxListeners = 20;
 
 connect();
 

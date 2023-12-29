@@ -1,3 +1,17 @@
 {
-    
+    "Logeo": "Solo el admin puede registrar usuarios",
+    "Tipos de Usuarios": "Hay tres tipos de usuarios",
+    "User": "Es el rol más bajo, puede ver los empleados y sus datos",
+    "Checker" : "Es un rol intermedio, puede ver los empleados, sus datos, editarlos y eliminarlos",
+    "Admin": "Aparte de hacer todo lo que los anteriores, puede registrar usuarios",
+    "Rutas": "Rutas De register, login, y logout",
+    "Post /api/register": "Para registrar un usuario",
+    "post /api/login": "Para logear un usuario",
+    "post /api/logout": "Para deslogear un usuario",
+    "Rutas de Empleados": "Rutas de empleados",
+    "get /api/employees": "Para ver todos los empleados",
+    "get /api/employee/:_id": "Para obtener un empleado por su id",
+    "post /api/employee": "Para registar un empleado",
+    "Patch /api/employee/:_id": "Para editar un empleado",
+    "Delete /api/employee/:_id": "Para eliminar un empleado por su id"  
 }
