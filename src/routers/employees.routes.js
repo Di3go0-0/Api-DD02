@@ -14,9 +14,9 @@ import { checkerToken } from "../middleware/checkerToken.js";
 
 const router = Router();
 
-router.get("/employees", getEmployees);
+router.get("/employees",userToken, getEmployees);
 
-router.get("/employee/:_id", getEmployee);
+router.get("/employee/:_id",userToken, getEmployee);
 
 router.post("/employee/",checkerToken, validateSchema(createEmployeeSchema), createEmployee );
 

@@ -7,8 +7,6 @@ events.EventEmitter.defaultMaxListeners = 20;
 
 connect();
 
-
-
 app.listen(PORT, ()=>{
     console.log(`Server on port ${PORT}`);
 });

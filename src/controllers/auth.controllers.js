@@ -13,11 +13,11 @@ export const register = async (req, res) => {
       role,
     });
     const userSaved = await newUser.save();
-    const token = await createAccessToken(
-      { id: userSaved._id },
-      { role: userSaved.role }
-    );
-    res.cookie("token", token);
+    // const token = await createAccessToken(
+    //   { id: userSaved._id },
+    //   { role: userSaved.role }
+    // );
+    // res.cookie("token", token);
 
     res.status(201).json({
       _id: userSaved._id,

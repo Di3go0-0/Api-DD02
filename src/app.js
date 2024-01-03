@@ -13,7 +13,7 @@ app.use(express.json()); //para que el servidor entienda los json que llegan al 
 app.use(cookieParser()); //para que el servidor entienda las cookies que llegan al servidor
 
 app.use(apiRouter);
-app.use("/api", userToken, employeeRoutes)
+app.use("/api", employeeRoutes)
 app.use("/api", authRoutes)
 
 
